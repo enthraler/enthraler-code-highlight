@@ -1,13 +1,14 @@
 /**
  * AMD JS Module Enthral Component.
  *
- * We use SystemJS to load components, and if it finds a valid AMD `define()` call it will treat this as an AMD module.
- * The `module`, `exports`, `require`, `global`, `__dirname` and `__filename` variables are all provided.
+ * This is an example of creating a component as an AMD module, using plain JS.
+ * No compiler like Webpack, Typescript or Haxe is necessary.
  *
- * https://github.com/systemjs/systemjs/blob/master/docs/module-formats.md#amd
+ * For information about AMD and the RequireJS loader we use, see:
+ * http://requirejs.org/
  */
 
-// Use an AMD module definition to define our imports, and export our components.
+// Use an AMD module definition to define our imports, and export our component.
 define(['enthral', 'jquery'], function (enthral, $) {
 	var Hello = function(config) {
 		this.container = $(config.container);

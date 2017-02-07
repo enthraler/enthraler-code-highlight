@@ -8,15 +8,12 @@
  */
 
 // Use an AMD module definition to define our imports, and export our components.
-define('Hello', ['enthral', 'jquery/v1'], function (enthral, $) {
-	var Hello = function(authorData) {
-		this.authorData = authorData;
-	};
-
-	Hello.prototype = {
-		setupView: function(container) {
-			var greeting = "Hello " + this.authorData.name + ", I am an AMD JS module!";
-			$(container).text(greeting);
+define(['enthral', 'jquery'], function (enthral, $) {
+	var Hello = function(config) {
+		this.container = $(config.container);
+		this.render = function (authorData) {
+			var greeting = "Hello " + authorData.name + ", I am an AMD JS module!";
+			this.container.text(greeting);
 		}
 	};
 

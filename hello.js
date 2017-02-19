@@ -9,12 +9,12 @@
  */
 
 // Use an AMD module definition to define our imports, and export our component.
-define(['enthral', 'jquery'], function (enthral, $) {
+define(['enthral', 'jquery', 'css!hello'], function (enthral, $) {
 	var Hello = function(config) {
-		this.container = $(config.container);
+		this.header = $("<h1>").appendTo(config.container);
 		this.render = function (authorData) {
 			var greeting = "Hello " + authorData.name + ", I am an AMD JS module!";
-			this.container.text(greeting);
+			this.header.text(greeting);
 		}
 	};
 

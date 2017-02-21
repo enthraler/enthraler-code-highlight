@@ -1,15 +1,20 @@
 /**
- * AMD JS Module Enthral Component.
+ * "Hello World" example for creating an Enthraler as an AMD JS module.
  *
  * This is an example of creating a component as an AMD module, using plain JS.
  * No compiler like Webpack, Typescript or Haxe is necessary.
  *
+ * jQuery is used here as an example of how to load dependencies, but it is not required.
+ *
  * For information about AMD and the RequireJS loader we use, see:
  * http://requirejs.org/
+ *
+ * The code in this template is released into the public domain, you are free to use it as you wish.
  */
 
-// Use an AMD module definition to define our imports, and export our component.
-define(['enthral', 'jquery', 'css!hello'], function (enthral, $) {
+// Use an AMD module definition.
+// We will import jQuery, enthraler, and local CSS.
+define(['enthraler', 'jquery', 'css!hello'], function (enthraler, $) {
 	var Hello = function(config) {
 		this.header = $("<h1>").appendTo(config.container);
 		this.render = function (authorData) {
@@ -18,8 +23,8 @@ define(['enthral', 'jquery', 'css!hello'], function (enthral, $) {
 		}
 	};
 
-	Hello.enthralPropTypes = {
-		// name: enthral.PropTypes.number.isRequired
+	Hello.enthralerPropTypes = {
+		// name: enthraler.PropTypes.number.isRequired
 	}
 
 	return Hello;

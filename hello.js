@@ -20,6 +20,9 @@ define(['enthraler', 'jquery', 'css!hello'], function (enthraler, $) {
 		this.render = function (authorData) {
 			var greeting = "Hello " + authorData.name + ", I am an AMD JS module!";
 			this.header.text(greeting);
+
+			// Resize the iframe to fit the new height.
+			config.environment.requestHeightChange();
 		}
 	};
 

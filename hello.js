@@ -25,10 +25,5 @@ define(['enthraler', 'jquery', 'css!hello'], function (enthraler, $) {
 			environment.requestHeightChange();
 		}
 	};
-
-	Hello.enthralerPropTypes = {
-		// name: enthraler.PropTypes.number.isRequired
-	}
-
 	return Hello;
 });

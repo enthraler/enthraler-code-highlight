@@ -1,10 +1,10 @@
 {
-  "name": "enthraler-hello-amd",
-  "version": "0.1.1",
+  "name": "enthraler-code-highlight",
+  "version": "1.0.0",
   "author": "Jason O'Neil",
   "license": "MIT",
   "enthraler": {
-	  "main": "hello.js",
-	  "schema": "hello-world-schema.json"
+	  "main": "highlight.js",
+	  "schema": "highlight-schema.json"
   }
 }

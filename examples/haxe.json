@@ -1,0 +1,4 @@
+{
+    "code": "class Test {\n \tstatic function main() {\n \t\tvar people = [\n \t\t\t'Elizabeth' => 'Programming',\n \t\t\t'Joel' => 'Design'\n \t\t];\n \n \t\tfor (name in people.keys()) {\n \t\t\tvar job = people[name];\n \t\t\ttrace('$name does $job for a living!');\n \t\t}\n \t}\n }",
+    "language": "haxe"
+}

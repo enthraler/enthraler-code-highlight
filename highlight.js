@@ -27,7 +27,7 @@ define(['enthraler', highlightJsUrl, 'css!highlight'], function (enthraler, hljs
 			});
 
 			// Load the stylesheet for the style.
-			var style = authorData.style || 'monokai-sublime';
+			var style = authorData.style || 'railscasts';
 			var link = document.createElement('link');
 			link.rel = 'stylesheet';
 			link.href = baseUrl + 'styles/' + style + '.min.css';

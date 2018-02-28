@@ -184,7 +184,7 @@
   },
   "style": {
     "type": "oneOf",
-    "optional": false,
+    "optional": true,
     "values": [
       "agate",
       "androidstudio",
